@@ -15,6 +15,7 @@ bot_token = "" # pruebas
 respuesta_string = "Utiliza o comando '/clases' para recibir o horario de hoxe"
 root_logs_dir = "User-Logs"
 log_file = "logs.txt"
+refresh_delay = 500
 
 
 
@@ -130,7 +131,7 @@ def runBot():
                 print("Nueva version del documento detectada")
                 tablaHorarios = results[1]
 
-            sleep(800)
+            sleep(refresh_delay)
 
     refresh = threading.Thread(target=refreshDoc).start()
 
