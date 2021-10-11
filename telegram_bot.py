@@ -112,14 +112,6 @@ def runBot():
 
     updater.start_polling()
 
-
-    def avisarClases():
-
-        tablaHorarios
-        for hora in horario_actual:
-            if (horario_actual[hora] != ""):
-                clases_hoy = clases_hoy + "\n" + hora + " - " + horario_actual[hora]
-
     def refreshDoc():
 
         savedVersion = False
